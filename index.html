@@ -152,35 +152,27 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-ocr" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-test" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/10/26/ocr/">ocr</a>
+      <a class="article-title" href="/2021/10/26/test/">Hello!</a>
     </h1>
   
 
         
-        <a href="/2021/10/26/ocr/" class="archive-article-date">
-  	<time datetime="2021-10-26T06:09:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-10-26</time>
+        <a href="/2021/10/26/test/" class="archive-article-date">
+  	<time datetime="2021-10-26T06:54:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-10-26</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Transformer</p>
-<p><a target="_blank" rel="noopener" href="https://img2020.cnblogs.com/blog/1242619/202011/1242619-20201124161723576-1134567877.png"><img src="https://cdn.nlark.com/yuque/0/2021/png/1100151/1631027966700-8a876a2c-9a7b-4493-ba8f-951c3778f939.png" alt="img"></a></p>
-<p>般讲到处理sequence，最常想到的神经网络架构是RNN，有时候用单向的，有时候用双向的。</p>
-<p>RNN的输入是一串向量sequence，输出是另外一串向量sequence。</p>
-<p>如果是单向RNN，在输出b4b4的时候，机器已经把a1a1到a4a4都看过，输出b3b3的时候，把a1a1到a3a3都看过。</p>
-<p>如果是双向RNN，当输出每个b1b1到b4b4的时候，机器把整个a1a1到a4a4都看过。</p>
-<p>RNN的问题是不容易并行化。假设你要计算b4b4，在单向RNN下，你要先看a1a1、再看a2a2、再看a3a3、再看a4a4，你才能把b4b4计算出来。</p>
-<p>那么怎么办呢？有人提出拿CNN来代替RNN。input同样是a1a1到a4a4，但用CNN来处理。上图三角形代表一个filter，filter的输入是sequence中的一小段，比如吃三个向量作为输入，然后输出一个数值（三个向量串起来，和filter里面的参数做点积）。然后把filter扫过sequence，filter可以不只一个。</p>
-<p>[<img src="/export/hexo/blog/source/_posts/ocr.assets/1631027966653-dcbced30-71a5-4eaf-82b4-ef7f5ce76e8c.png" alt="img">](</p>
+        <p>大家好，这是我的个人博客，欢迎大家关注！</p>
 
       
 
@@ -193,82 +185,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2021/10/26/ocr/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/10/25/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2021/10/25/hello-world/" class="archive-article-date">
-  	<time datetime="2021-10-25T15:03:44.252Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-10-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/10/25/hello-world/">展开全文 >></a>
+          <a class="article-more-a" href="/2021/10/26/test/">展开全文 >></a>
         </p>
       
 
