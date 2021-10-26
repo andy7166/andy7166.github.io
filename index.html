@@ -174,6 +174,13 @@
       
         <p>Transformer</p>
 <p><a target="_blank" rel="noopener" href="https://img2020.cnblogs.com/blog/1242619/202011/1242619-20201124161723576-1134567877.png"><img src="https://cdn.nlark.com/yuque/0/2021/png/1100151/1631027966700-8a876a2c-9a7b-4493-ba8f-951c3778f939.png" alt="img"></a></p>
+<p>般讲到处理sequence，最常想到的神经网络架构是RNN，有时候用单向的，有时候用双向的。</p>
+<p>RNN的输入是一串向量sequence，输出是另外一串向量sequence。</p>
+<p>如果是单向RNN，在输出b4b4的时候，机器已经把a1a1到a4a4都看过，输出b3b3的时候，把a1a1到a3a3都看过。</p>
+<p>如果是双向RNN，当输出每个b1b1到b4b4的时候，机器把整个a1a1到a4a4都看过。</p>
+<p>RNN的问题是不容易并行化。假设你要计算b4b4，在单向RNN下，你要先看a1a1、再看a2a2、再看a3a3、再看a4a4，你才能把b4b4计算出来。</p>
+<p>那么怎么办呢？有人提出拿CNN来代替RNN。input同样是a1a1到a4a4，但用CNN来处理。上图三角形代表一个filter，filter的输入是sequence中的一小段，比如吃三个向量作为输入，然后输出一个数值（三个向量串起来，和filter里面的参数做点积）。然后把filter扫过sequence，filter可以不只一个。</p>
+<p>[<img src="/export/hexo/blog/source/_posts/ocr.assets/1631027966653-dcbced30-71a5-4eaf-82b4-ef7f5ce76e8c.png" alt="img">](</p>
 
       
 
